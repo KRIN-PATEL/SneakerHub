@@ -1,0 +1,369 @@
+  /* Header Styles */
+  header {
+      background-color: white;
+      padding: 0.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .color {
+
+      color: black !important;
+  }
+
+  header .logo img {
+      max-height: 50px;
+      width: auto;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+  }
+
+  nav ul li {
+      margin-left: 2rem;
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      font-size: 1rem;
+      color: #333;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+      color: #007bff;
+  }
+
+  nav ul li a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #007bff;
+      transition: width 0.3s ease;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+  }
+
+  nav ul li a:hover::after {
+      width: 100%;
+  }
+
+
+
+  .carousel-item img {
+      height: 75vh;
+      /* Adjust height for better display */
+      object-fit: cover;
+      width: 100%;
+  }
+
+  /* Scoped Custom Styles */
+  .custom-navbar {
+      background-color: white;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-navbar a.nav-link {
+      color: #333 !important;
+      transition: color 0.3s ease;
+  }
+
+  .custom-navbar a.nav-link:hover {
+      color: #007bff !important;
+  }
+
+  /* Carousel Section */
+  .custom-carousel .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+  }
+
+  .custom-carousel .carousel-caption h2,
+  .custom-carousel .carousel-caption p {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  /* Card Hover Effects */
+  .hover-card {
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+  }
+
+  .hover-card img {
+      height: 250px;
+      /* Resize the images */
+      object-fit: cover;
+      /* Ensure proper image scaling */
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      transition: transform 0.3s ease;
+  }
+
+  .hover-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .hover-card:hover img {
+      transform: scale(1.1);
+  }
+
+  /* Button Hover Effect */
+  .hover-btn {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .hover-btn:hover {
+      background-color: #1abc9c;
+      transform: scale(1.05);
+  }
+
+
+
+  .product-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-card .card-body {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .product-card .btn {
+      margin-top: auto;
+      /* Ensure buttons are aligned at the bottom */
+  }
+
+  .product-card img {
+      height: 200px;
+      /* Ensure consistent image size */
+      object-fit: cover;
+      /* Maintain image aspect ratio */
+      border-radius: 4px;
+  }
+
+  /* Footer Section */
+  .custom-footer {
+      background: #34495e;
+      color: #fff;
+      padding: 40px 0;
+  }
+
+  .custom-footer .footer-column h5 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+  }
+
+  .custom-footer .footer-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  .custom-footer .footer-nav li {
+      margin-bottom: 10px;
+      position: relative;
+  }
+
+  .custom-footer .footer-nav li a {
+      color: #fff !important;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      padding-bottom: 5px;
+  }
+
+  .custom-footer .footer-nav li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #007bff;
+      transition: width 0.3s ease;
+  }
+
+  .custom-footer .footer-nav li a:hover {
+      color: #007bff !important;
+  }
+
+  .custom-footer .footer-nav li a:hover::after {
+      width: 100%;
+  }
+
+  .custom-footer .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #fff !important;
+      transition: color 0.3s ease;
+  }
+
+  .custom-footer .social-icons a:hover {
+      color: #f39c12 !important;
+  }
+
+  .custom-footer .footer-column p {
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+  }
+
+
+  /* Hero Section */
+  .hero-section {
+      background: linear-gradient(to left, #98A69A, #2F4032);
+      color: #fff;
+      padding: 8rem 0;
+      text-align: center;
+  }
+
+  .hero-section h2 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+  }
+
+  .hero-section p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+  }
+
+  .hero-section .btn {
+      background: #2F4032;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+  }
+
+  .hero-section .btn:hover {
+      background: #24422a;
+  }
+
+  /* Featured Section */
+  .featured-section {
+      padding: 4rem 0;
+      background: #fff;
+  }
+
+  .featured-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #2c3e50;
+  }
+
+  .featured-section .sneaker-item {
+      background: #f9f9f9;
+      padding: 1rem;
+      text-align: center;
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .featured-section .sneaker-item img {
+      width: 100%;
+      border-radius: 8px;
+  }
+
+  .featured-section .sneaker-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .featured-section .sneaker-item h3 {
+      font-size: 1.5rem;
+      color: #333;
+  }
+
+  .featured-section .sneaker-item a.btn {
+      background: #2F4032;
+      color: #fff;
+      padding: 0.5rem 1.5rem;
+      border-radius: 15px;
+  }
+
+  .featured-section .sneaker-item a.btn:hover {
+      background: #98A69A;
+  }
+
+  /* Brand Section */
+  .brand-section {
+      padding: 4rem 0;
+      background: #2c3e50;
+      color: #fff;
+  }
+
+  .brand-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+  }
+
+  .brand-section .brand-item {
+      text-align: center;
+      width: 20%;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .brand-section .brand-item img {
+      width: 80%;
+      max-width: 140px;
+      margin-bottom: 1rem;
+  }
+
+  .brand-section .brand-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  .gif-container {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .gif-medium {
+      width: 300px;
+      /* Set width for medium size */
+      height: auto;
+      /* Maintain aspect ratio */
+      max-width: 100%;
+      /* Responsive resizing */
+  }
+
+  @keyframes fadeIn {
+      to {
+          opacity: 1;
+      }
+  }

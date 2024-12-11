@@ -1,0 +1,101 @@
+
+# Sneakers Shopping Cart System
+
+This project is a dynamic and secure Sneakers Shopping Cart System developed using PHP and MySQL with Object-Oriented Programming (OOP) principles. The application includes functionalities for managing a shopping cart, displaying products, generating invoices, and providing a seamless user experience. Bootstrap is used for responsive design and animations, ensuring a visually appealing interface.
+
+## Features
+
+### Core Features
+1. **User Authentication**:
+   - Ensures only logged-in users can access cart functionalities.
+2. **Shopping Cart Management**:
+   - Create a cart for a user.
+   - Add items to the cart with real-time price calculation.
+   - Remove items or clear the cart entirely.
+   - View cart items with detailed product information including name, image, and price.
+3. **Invoice Generation**:
+   - Automatically generate a PDF invoice for each completed order using the **FPDF library**.
+4. **Product Display**:
+   - Dynamic product fetching from the database.
+5. **Database Connection**:
+   - Secure connection to MySQL using PDO with error handling.
+6. **Secure Coding Practices**:
+   - Implements XSS prevention techniques.
+   - Proper parameterized queries to avoid SQL injection.
+7. **Responsive Design**:
+   - Fully responsive using Bootstrap 5 for a better user experience on different devices.
+
+### Object-Oriented Programming (OOP)
+- The application is built on OOP principles, promoting modular and reusable code.
+- Key classes:
+  - **`Cart`**: Handles all cart-related functionalities such as adding/removing items and viewing cart contents.
+  - **`DB`**: Manages database connections using PDO.
+  - **`Invoice`** (planned): A dedicated class for handling invoice generation using the FPDF library.
+
+### Future Implementations
+1. **Admin Panel**:
+   - Manage users, products, and orders.
+   - CRUD operations for products directly from the admin dashboard.
+   - View analytics on user purchases.
+2. **Wishlist**:
+   - Allow users to save products to a wishlist for future reference.
+3. **Order History**:
+   - Users can view their past orders and statuses.
+4. **Enhanced Product Filters**:
+   - Add filters for price range, brand, and ratings.
+5. **Improved Checkout Process**:
+   - Implement multiple payment gateway integrations.
+6. **User Reviews and Ratings**:
+   - Allow customers to leave reviews and ratings for products.
+7. **Coupons and Discounts**:
+   - Add support for promotional codes and dynamic discounts.
+8. **Multi-language Support**:
+   - Localize the application for a wider audience.
+
+## Technologies Used
+- **Frontend**: HTML5, CSS3, Bootstrap 5
+- **Backend**: PHP (OOP), PDO for database interaction
+- **Database**: MySQL
+- **PDF Generation**: FPDF library
+- **Version Control**: Git
+
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/KRIN-PATEL/SneakerHub.git
+   cd sneakers-cart
+   ```
+
+2. **Setup Database**:
+   - Import the provided SQL script (`sneakers_db.sql`) into your MySQL database.
+   - Update the database connection details in the `DB.php` file:
+     ```php
+     private $host = 'localhost:3306';
+     private $db_name = 'sneakers_db';
+     private $username = 'root';
+     private $password = '';
+     ```
+
+3. **Install FPDF Library**:
+   - Download the FPDF library from [http://www.fpdf.org/](http://www.fpdf.org/).
+   - Place the library in the project directory under a folder named `fpdf`.
+
+4. **Run the Application**:
+   - Host the project on a local or remote server.
+   - Access the application via the browser at `http://localhost/SneakerStore/`.
+
+## Usage
+1. Register/Login to access the shopping cart.
+2. Browse the available products.
+3. Add items to the cart and manage them (update quantities, remove items).
+4. Complete the order to generate a downloadable PDF invoice.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for review.
+
+## Acknowledgments
+- **Bootstrap**: For responsive and animated UI.
+- **PHP**: For powering the backend logic.
+- **FPDF**: For generating PDF invoices.
+- **MySQL**: For database management.
